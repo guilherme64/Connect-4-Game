@@ -1,0 +1,152 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	font-color: white;
+	font-size: 30px;
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+}
+
+html body{
+	min-height:100vh;
+	min-width: 250px;
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	background-image: linear-gradient(45deg, #ffffff 0%, #efe0ed 100%);
+}
+
+nav{
+	line-height: 50px;
+	min-width: 100%;
+	background-color: #21D4FD;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #ff213a 100%);
+
+}
+li{
+	list-style-type: none;
+	display:inline;
+	margin: 10px;
+}
+p{
+	padding: 5px;
+}
+a{
+	color:black;
+}
+a:active{
+	color:black;
+}
+
+button{
+	border:none;
+	position:relative;
+	height:50px;
+	min-width: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: rgba(0,0,0,0.1);
+
+}
+button:focus{
+	outline:0;
+}
+
+#gameover{
+	max-width: 80%;
+	margin: 0 auto;
+
+}
+
+#help{
+	max-width: 50%;
+	margin: 0 auto;
+
+}
+
+.btn-left{
+	float:right;
+}
+.container{
+	padding-top: 25px;
+	text-align: center;
+	max-width: 50%;
+	margin:0 auto;
+}
+
+.overlay{
+	position:fixed;
+	top:60px;
+	bottom:0;
+	left:0;
+	right:0;
+	visibility:hidden;
+}
+.overlay:target{
+	visibility:visible;
+}
+.title{
+	font-size: 2em;
+	margin:0px !important;
+}
+.popup{
+	text-align: justify;
+	max-width: 40%;
+	padding:20px;
+	margin: 0 auto;
+	border: black solid 2px;
+	border-radius: 10px;
+	background-color: white;
+}
+
+.gameElement{
+	width:calc(80vmin/6);
+	height:calc(80vmin/6);
+	border-radius: 200px;
+
+}
+
+
+
+.unclicked{
+		background-color: #b9b5b5;
+		background-image: linear-gradient(198deg, #b9b5b5 3%, #c4c0c0 41%, #bdbdbd 63%);
+}
+.blue{
+	background-color: #21D4FD;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #2152ff 100%);
+}
+.red{
+	background-color: #ff0a00;
+	background-image: linear-gradient(19deg, #ff0a00 0%, #e28c8c 100%);
+}
+
+@media(max-width: 1100px){
+	.container{
+		text-align: center;
+		max-width: 90%;
+		margin:0 auto;
+	}
+
+	.popup{
+		min-width: 80%;
+		margin:0 auto;
+	}
+
+
+}
+
+@media(max-width: 800px){
+	.container{
+		text-align: center;
+		max-width: 100%;
+		margin:0 auto;
+	}
+
+	.popup{
+		min-width: 100%;
+		margin:0 auto;
+	}
+}
+
